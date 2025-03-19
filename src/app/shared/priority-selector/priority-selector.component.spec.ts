@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { PrioritySelectorComponent } from './priority-selector.component';
+import {PrioritySelectorComponent} from './priority-selector.component';
 
 describe('PrioritySelectorComponent', () => {
   let component: PrioritySelectorComponent;
@@ -8,9 +8,8 @@ describe('PrioritySelectorComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PrioritySelectorComponent]
-    })
-    .compileComponents();
+      imports: [PrioritySelectorComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(PrioritySelectorComponent);
     component = fixture.componentInstance;

@@ -1,11 +1,20 @@
 <form #taskForm="ngForm" (ngSubmit)="onSubmit()">
   <mat-form-field>
-
-
-
-    <input matInput name="title" [(ngModel)]="task.title" required placeholder="Task Title">
+    <input
+      matInput
+      name="title"
+      [(ngModel)]="task.title"
+      required
+      placeholder="Task Title"
+    />
   </mat-form-field>
 
-  <button mat-raised-button color="primary" type="submit" [disabled]="!taskForm.valid">Add</button>
-
+  <button
+    mat-raised-button
+    color="primary"
+    type="submit"
+    [disabled]="!taskForm.valid"
+  >
+    Add
+  </button>
 </form>

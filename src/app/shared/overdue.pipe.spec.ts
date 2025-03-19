@@ -1,4 +1,4 @@
-import { OverduePipe } from './overdue.pipe';
+import {OverduePipe} from './overdue.pipe';
 
 describe('OverduePipe', () => {
   it('create an instance', () => {

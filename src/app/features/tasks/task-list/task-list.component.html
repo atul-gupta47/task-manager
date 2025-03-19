@@ -1,9 +1,6 @@
 <h1>Task List</h1>
 <app-task-form></app-task-form>
 <ng-container *ngFor="let task of tasks">
-  <app-task-card
-                 [title]="task.title"
-                 [description]="task.description">
+  <app-task-card [title]="task.title" [description]="task.description">
   </app-task-card>
 </ng-container>
-
