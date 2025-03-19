@@ -1,0 +1,8 @@
+<mat-card>
+  <mat-card-title>{{ title }}</mat-card-title>
+  <mat-card-content>{{ description }}</mat-card-content>
+  <app-priority-selector [priority]="priority" (priorityChange)="priority = $event"></app-priority-selector>
+  <mat-checkbox [(ngModel)]="completed">Completed</mat-checkbox>
+  <p>Due: {{ dueDate | date:'short' }} - {{ dueDate | overdue }}</p>
+</mat-card>
+
